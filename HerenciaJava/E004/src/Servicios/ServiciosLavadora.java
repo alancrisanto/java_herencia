@@ -54,7 +54,6 @@ public class ServiciosLavadora {
         
     }
     
-   
     public int precioFinal(){
         int precio = servElc.precioFinal();
         int carga = lavadora.getCarga();

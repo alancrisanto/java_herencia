@@ -5,10 +5,10 @@
  */
 package e004;
 
-import Entidad.Electrodomestico;
 import Entidad.Lavadora;
-import Servicios.ServiciosElectrodomesticos;
+import Entidad.Televisor;
 import Servicios.ServiciosLavadora;
+import Servicios.ServiciosTelevisor;
 
 /**
  *
@@ -32,14 +32,14 @@ public class E004 {
 //        System.out.println(el.toString());
 
         ServiciosLavadora sl = new ServiciosLavadora();
+        ServiciosTelevisor st = new ServiciosTelevisor();
         
         Lavadora lava = sl.crearLavadora();
+        Televisor tv = st.crearTelevisor();
         
-        System.out.println(lava.getPeso());
-        System.out.println(lava.getConsumo());
-        System.out.println(lava.getColor());
-        System.out.println(lava.getCarga());
-        System.out.println(lava.getPrecio());
+        System.out.println(lava.toString());
+       
+        System.out.println(tv.toString());
         
         
     }
